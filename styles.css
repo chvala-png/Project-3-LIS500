@@ -1,9 +1,87 @@
-.site-header {
-border-bottom: 1px solid red;
+
+html, body{
+    margin:0;
+    padding:0;
 }
+
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    background: transparent;
+}
+
+
+nav{
+    display: flex;
+    width: 100%;
+    background: transparent;
+    gap:20px;
+    padding:30px;
+    padding-left:50px;
+    
+}
+
+nav a{
+    color:#303453;
+    text-decoration:none;
+    font-size:20px;
+}
+    
 .hero{
-    height: 80px; /* Change 80px to your desired height */
+    height: 750px;
+    width: 100%;
     display: flex;
     align-items: center;
-    background-color:aqua;
+    margin:0;
+
+    background-image: url('images/hand_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-content {
+    position: absolute;
+    top: 18%;
+    left: 6%;
+}
+.hero-accent {
+    width: 75px;
+    height: 5px;
+    background-color: #7f93c2;
+    margin-bottom: 25px;
+}
+.hero-content h1 {
+    font-size: clamp(48px, 6vw, 100px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: #303453;
+    margin: 0;
+    font-weight: 700;
+}
+.hero-content p {
+    font-size: clamp(16px, 2vw, 26px);
+    color: #666879;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+
+.About{
+    margin:0;
+    padding:20px;
+    background-color:#666879;
+}
+
+.Project{
+    margin:0;
+    padding:20px;
+    background-color:white;
 }
