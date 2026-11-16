@@ -78,9 +78,36 @@ nav a{
     margin:0;
     padding:20px;
     background-color:#666879;
+    color:white;
 }
 
-.Project{
+.Scope{
+    margin:0;
+    padding:20px;
+    background-color:white;
+}
+
+.Process{
+    margin:0;
+    padding:20px;
+    background-color:rgb(230, 232, 233);
+}
+
+.Lessons{
+    margin:0;
+    padding:20px;
+    background-color:#666879;
+    color:white;
+    
+}
+
+.Video{
+    margin:0;
+    padding:20px;
+     background-color:rgb(230, 232, 233);
+}
+
+.Model{
     margin:0;
     padding:20px;
     background-color:white;
