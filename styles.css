@@ -1,0 +1,9 @@
+.site-header {
+border-bottom: 1px solid red;
+}
+.hero{
+    height: 80px; /* Change 80px to your desired height */
+    display: flex;
+    align-items: center;
+    background-color:aqua;
+}
