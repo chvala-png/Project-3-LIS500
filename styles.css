@@ -119,6 +119,13 @@ nav a{
     margin-top: 30px;
 }
 
+.Model p{
+    text-align: center;
+}
+.Model h2{
+    text-align: center;
+}
+
 #canvas-container {
     display: flex;
     justify-content: center;
