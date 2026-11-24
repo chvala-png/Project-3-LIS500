@@ -31,6 +31,11 @@ nav a{
     color:#303453;
     text-decoration:none;
     font-size:20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #deb7f7;
 }
 
 /* Inludes the background image of the HERO, adjusts image properties AC */
