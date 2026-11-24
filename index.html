@@ -31,9 +31,68 @@
 
         <section class = "About" id="about">
             <h2>Our Project Statement</h2>
-            <p>We created an algorithm and exported it into an API (application program interface) using Google's Teachable Machine. 
-            Our algorithm process the shape of the users hand, and outputs whether the user is making a thumbs-up, thumbs-down, peace sign, "rock on" sign, or a heart.
+            <h3>Intro</h3>
+            <p>
+                For our project, we created a hand classification algorithm. This was done using Teachable Machine by Google. 
+                We created this to develop a machine learning model that could recognize different hand gestures including: thumbs up, thumbs down, 
+                heart sign, peace sign, and rock-on sign. Throughout the development of our project, we gained an understanding of how AI, 
+                artificial intelligence, operates and how it depends on the data that is used to train it. We quickly discovered that certain gestures 
+                were more difficult for the model to recognize than others. This was due to differences in lighting, positions, or a person’s left or right hand. 
             </p>
+            <h3>Training Our Model</h3>
+            <p>
+                Creating the model through Teachable Machine by Google, allowed us to create four different categories corresponding to 
+                a hand gesture we wanted our model to recognize. Each category required a set of images that the model could use to learn the 
+                characteristics of that particular gesture. Collecting the training data was one of the most important parts of this project. 
+                At the start, our model was able to recognize the thumbs-down pretty well. However, it had some trouble recognizing thumbs up 
+                and would classify it as thumbs down. The machine could not recognize that direction as the defining characteristic which separated the two categories. 
+                Another interesting observation involved the heart sign gesture. Our model was also able to recognize the heart well. 
+                However, there was a problem when we realized that there are multiple ways that people can form a heart using their hands. 
+                This meant that successfully recognizing one variation of the gesture did not mean that our model could recognize every other way of creating a heart. 
+                We had to consider how different individuals might perform the same gesture and expand our dataset based on that knowledge.
+            </p>
+            <h3>Addressing Limitations of Our Dataset</h3>
+            <p>
+                The primary solution to these challenges that we implemented was to increase the size and diversity of our training image set. 
+                By making our dataset larger, we sought to give the machine a better opportunity to identify the characteristics that defined each gesture. 
+                One thing we took note of was ensuring that our dataset included gestures performed with both the left and right hands. 
+                A machine learning model does not automatically possess the understanding of a left or right hand performing a hand sign. 
+                A gesture performed with the left hand may appear visually different from the same gesture performed with the right hand for the model. 
+                If one hand is underrepresented in the training data, the model may struggle to recognize gestures performed with that hand.
+                These roadblocks helped us realize that machine learning is an iterative process. Developing an algorithm is not simply a matter of collecting data, 
+                training a model, and hoping that it will work correctly. It requires a lot of testing, identifying weaknesses, reconsidering previous assumptions, 
+                and making changes based on the results.
+            </p>
+            <h3>Connections to Unmasking AI</h3>
+            <p>
+                One of the main themes from Joy Buolamwini's Unmasking AI was the idea that AI is not inherently neutral. Decisions made by machines are heavily 
+                influenced by the data used to train it, assumptions, and biases of the people who develop them. Although our hand classification project is 
+                much smaller in scale and does not carry the same consequences as facial analysis, we encountered a similar problem. Our algorithm's ability to 
+                recognize different hand gestures relies on whether those gestures were represented in our training data. If our dataset did not include many 
+                examples of a specific gesture, the machine was more likely to classify it as something else. Our decision to include both left-handed and right-handed 
+                gestures connects directly to this lesson. If we had primarily trained our model using gestures with our right hand, we could have created a system that 
+                performed better for individuals using their right hand without meaning to. This would not have been the result of an intentional decision to exclude left-handed 
+                individuals. Instead, it would have resulted from overlooking a very important difference among potential users. This shows one of the major concerns presented 
+                in Unmasking AI: bias does not always come from bad intentions. It can emerge from assumptions, oversights, and maybe just a simple lack of representation. 
+                Developers might believe that their models work well because they perform well under familiar conditions. However, those models may behave differently when 
+                exposed to individuals or situations that were not represented during development. Another lesson from Unmasking AI that stood out to us was the importance 
+                of holding humans accountable for the systems they create. This is the idea that it can be really easy to blame a machine when it produces an incorrect result. 
+                However, our experience demonstrated that the machine's performance was closely connected to the decisions we made throughout the development process.
+                When our model confused thumbs up with thumbs down, it was our responsibility to investigate why these errors were occurring. Rather than simply accepting 
+                that the machine was incapable of recognizing these gestures, we reconsidered the data we provided and identified ways to improve our training process.
+            </p>
+            <h3>Conclusion </h3>
+            <p>
+                Overall, our hand classification project provided us with a practical understanding of the challenges involved in developing AI models. 
+                We learned that common hand gestures can be difficult for a machine to distinguish and how well a model works depends on the decisions made by humans 
+                during its development. If we were to continue with developing our project, we would want to further diversify and increase our dataset by including 
+                various individuals with different skin tones, hand sizes, and physical characteristics. We would also want to test the model under different lighting, 
+                backgrounds, and camera angles. These other considerations could help our algorithm perform better by implementing a wider range of users and environments. 
+                One of the most important lessons we learned is that creating AI is not solely a technical process but also a social and ethical one. Humans developing these 
+                algorithms must be very intentional about the data they collect, the assumptions that they make, and the individuals they consider when designing their systems. 
+                By acknowledging this, we can work toward creating technology that is more accurate, inclusive, and equitable.
+            </p>
+
         </section>
 
 
