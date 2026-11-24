@@ -80,6 +80,9 @@ nav a{
     background-color:#666879;
     color:white;
 }
+.About h2{
+    justify-content:center;
+}
 
 .Scope{
     margin:0;
