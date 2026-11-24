@@ -116,6 +116,13 @@ nav a{
     margin-top: 30px;
 }
 
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
 #model canvas {
     border-radius: 15px;
     max-width: 100%;
